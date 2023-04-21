@@ -1,19 +1,36 @@
-###简单的介绍Git、TGit和GitHub啥的，之后再补呀
+#Git的使用教程
 
-###现在才发现，还有好多好多需要学的！！知道的越多，知道的就越少！！  
+注：本部分介绍一下Git工具，对于我来说也是一个新的工具嘛，同时它又是一个重要的工具，本部分就介绍一下Git，同时衍生出来的Tortoise git（Tgit/小乌龟）这个工具介绍一下，最后在说一下使用心得等等！！总结经验！！
+####现在才发现，还有好多好多需要学的！！知道的越多，知道的就越少！！ 
 
+##Git工具
+ 
 ###准备工作  
 - 安装 git  
 - 安装 TortoiseGit 工具，这个工具是 git 的一种图形化界面  
 - 注意安装 git 的时候记得勾选将 git 所在目录添加到系统环境变量   
 
-###Git介绍  
+###Git介绍
+  
+Git是目前世界上最先进的分布式版本控制系统（没有之一）。  
+这个软件用起来就应该像这个样子，能记录每次文件的改动   
 
-
-###什么是Tortoisegit 
-
+###在Windows上安装Git
+在Windows上使用Git，可以从Git官网直接下载安装程序，然后按默认选项安装即可。  
+安装完成后，在开始菜单里找到“Git”->“Git Bash”，蹦出一个类似命令行窗口的东西，就说明Git安装成功！  
+因为Git是分布式版本控制系统，所以，每个机器都必须自报家门：你的名字和Email地址。    
  
-###如何使用Git和TGit
+##Tortoisegit
+[TGit教程](https://www.cnblogs.com/anayigeren/p/10177027.html)  
+   
+本教程应该称作TortoiseGit入门指南。因为下面要借助一个图形化的软件，TortoiseGit来操作git。用GUI（图形界面）再谈CLI（命令行），我相信这会更容易让人接受。
+ 
+- TortoiseGit 简称 tgit， 中文名海龟Git。TortoiseGit是一个开放的GIT版本控制系统的源客户端。
+- TortoiseGit 支持Winxp/vista/win7/Win10，提供有中文版支持。
+- TortoiseGit 可以恢复您的文件的旧版本，并研究如何以及合适改变了历史数据，谁改变了它。  
+
+
+##如何使用Git和TGit
 
 
 ###使用心得 
