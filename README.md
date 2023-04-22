@@ -7,8 +7,8 @@ This is my own RT-Thread, documenting some of the process of learning RT-Thread 
 
 文件夹结构及功能介绍：
 
-	My-RT-Thread
-		----WORK LOG（这个里面是一些需要学习的一些小的知识点）
+	My_Study_Notes
+		----Study LOG（这个里面是一些需要学习的一些小的知识点）
 			----april_2023
             	----xxxx(子目录是每个月学习的内容，做一个总结，周总结等)
 			----may_2023
@@ -26,3 +26,5 @@ This is my own RT-Thread, documenting some of the process of learning RT-Thread 
         ----XXXX
 
 注：月份 January，February，March，April，May，June，July，August，September，October，November，December
+出道即夭折！！告辞！！之后应该更的少了，后会有期
+别呀！换个标题，咱还是咱！！
