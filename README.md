@@ -1,4 +1,4 @@
-# My_Study_Notes
+# `My_Study_Notes`
 This is my own RT-Thread, documenting some of the process of learning RT-Thread and some experience.
 
 
@@ -26,5 +26,5 @@ This is my own RT-Thread, documenting some of the process of learning RT-Thread 
         ----XXXX
 
 注：月份 January，February，March，April，May，June，July，August，September，October，November，December
-出道即夭折！！告辞！！之后应该更的少了，后会有期
+出道即夭折！！告辞！！之后应该更的少了，后会有期  
 别呀！换个标题，咱还是咱！！
