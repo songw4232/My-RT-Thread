@@ -2,7 +2,7 @@
 This is my own RT-Thread, documenting some of the process of learning RT-Thread and some experience.
 
 
-###文件夹的介绍
+##文件夹的介绍
 - 算是第一版吧，这个目前也是我的初步构思的一个文档的框架结构，后期如果有更好的框架结构，在做调整呀
 
 文件夹结构及功能介绍：
@@ -28,3 +28,15 @@ This is my own RT-Thread, documenting some of the process of learning RT-Thread 
 注：月份 January，February，March，April，May，June，July，August，September，October，November，December
 出道即夭折！！告辞！！之后应该更的少了，后会有期  
 别呀！换个标题，咱还是咱！！
+
+
+##计划
+注：有时间，有计划的话，就写在这！！  
+如果工作比较忙，需要梳理条理的，也可以写在这！！写一些计划的话，可以提高效率啥的！起码知道短期或者一个长期的计划！！
+
+- 时间：2023-04-22  
+嗯，最近的话，目前的计划是，把这个LCD学明白啊！之前都是最基础最基础的东西，不能叫学会了LCD屏的使用！花个一周时间，学习这个，顺便把C语言的知识点拾起来！！如果我会的话，也不至于！！   
+
+- 时间：2023-05-04  
+前段时间，把mini的LCD，SPIflash，USMART调试组件简单学了一下，学习模块的使用！！芯片的使用等等。还是把这个f103的单片机慢慢学，争取都学一下，之后看到有映像就行！！  
+还有链表知识点，在有时间学C++。
