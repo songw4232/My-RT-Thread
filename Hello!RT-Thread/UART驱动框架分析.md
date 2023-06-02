@@ -64,7 +64,7 @@ RTT的设备列表，不是一个简单的数组或者链表，使用一个for�
 
 这个容器里面有：设备列表、信号列表、时间列表，互斥锁、事件、邮箱、消息队列、内存堆、内存池、设备、定时器等不同类型的对象。  
 `RT_Object_Class_Device`这个就是设备列表！！
-  
+
 可以看到`RT_Object_Class_Unknown`顺序排到倒数第二个去了。加入我们将来需要扩展这个object容器，则可以把新增的对象列表放在这个枚举列表里，并且放在`RT_Object_Class_Unknown`之前。不过需要注意容器中的列表数量可能不能超过0x80。
 	
 	rt_device_t rt_device_find(const char *name)
@@ -72,7 +72,7 @@ RTT的设备列表，不是一个简单的数组或者链表，使用一个for�
 	    struct rt_object *object;
 	    struct rt_list_node *node;
 	    struct rt_object_information *information;
-
+	
 	    /* try to find device object */
 	    information = rt_object_get_information(RT_Object_Class_Device);//关键代码！！要找到UART串口设备，就要靠这个参数！！
 	    RT_ASSERT(information != RT_NULL);
@@ -177,7 +177,7 @@ RTT的设备列表，不是一个简单的数组或者链表，使用一个for�
     device->open        = rt_serial_open;
     device->read        = rt_serial_read;
     device->control     = rt_serial_control;
-	
+
 是这个，怎么又转换到了上面这个了！`dev->init = rt_serial_init` 还没搞明白这一步？
 
 	static rt_err_t rt_serial_init(struct rt_device *dev)
@@ -204,7 +204,7 @@ RTT的设备列表，不是一个简单的数组或者链表，使用一个for�
 #####重点2！！`(dev->init)`代码的理解
 
 `dev`是什么？`init`是什么？`(dev->init)`含义？ 
- 
+
 	`rt_device_t dev`// 声明一个指向 struct rt_device 结构体的指针变量
 		==>`typedef struct rt_device *rt_device_t;`不是啊！这个`rt_device_t`，是等价与`struct rt_device *`，是一个结构体指针
 			==>struct rt_device
@@ -226,7 +226,7 @@ RTT的设备列表，不是一个简单的数组或者链表，使用一个for�
 通过定义`rt_device_t`这个类型，我们可以方便地声明指向`struct rt_device`结构体的指针变量，例如：
 
 	rt_device_t dev;  // 声明一个指向 struct rt_device 结构体的指针变量 
-在实际开发中，`rt_device_t`这个类型常常被用来作为函数参数类型或返回值类型，以便于传递或返回指向`struct rt_device`结构体的指针。同时，使用`rt_device_t`这个类型还可以提高代码的可读性和可维护性。
+在实际开发中，`rt_device_t`这个类型常常被用来作为**函数参数类型或返回值类型**，以便于传递或返回指向`struct rt_device`结构体的指针。同时，使用`rt_device_t`这个类型还可以提高代码的可读性和可维护性。
 
 `(dev->init)`是一个函数指针，它表示指向`dev`所指向的结构体中的`init`成员函数的指针。其中，`dev`是一个指向`struct rt_device`结构体的指针变量，也就是说，`init`是`struct rt_device`结构体中的一个函数成员。
 
